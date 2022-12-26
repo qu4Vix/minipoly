@@ -1,23 +1,23 @@
 Using pre-set license
-Built from '2021.3/staging' branch; Version is '2021.3.15f1 (e8e88683f834) revision 15263878'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22000) 64bit Core' Language: 'es' Physical Memory: 7488 MB
+Built from '2021.3/staging' branch; Version is '2021.3.6f1 (7da38d85baf6) revision 8233869'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19042) 64bit Education' Language: 'es' Physical Memory: 8071 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2021.3.15f1\Editor\Unity.exe
+D:\nueva CARPETA\Unity\2021.3.6f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/Ordenador/Documents/GitHub/minipoly/unity-project/Minipoly
+D:/nueva CARPETA/Unity/Proyectos/minipoly/unity-project/Minipoly
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-61661
-Successfully changed project path to: C:/Users/Ordenador/Documents/GitHub/minipoly/unity-project/Minipoly
-C:/Users/Ordenador/Documents/GitHub/minipoly/unity-project/Minipoly
+54309
+Successfully changed project path to: D:/nueva CARPETA/Unity/Proyectos/minipoly/unity-project/Minipoly
+D:/nueva CARPETA/Unity/Proyectos/minipoly/unity-project/Minipoly
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,192 +47,24 @@ C:/Users/Ordenador/Documents/GitHub/minipoly/unity-project/Minipoly
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [2708] Host "[IP] 192.168.1.38 [Port] 0 [Flags] 2 [Guid] 2848774139 [EditorId] 2848774139 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-454D3MPU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
-
-Player connection [2708] Host "[IP] 192.168.1.38 [Port] 0 [Flags] 2 [Guid] 2848774139 [EditorId] 2848774139 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-454D3MPU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
-
-Refreshing native plugins compatible for Editor in 134.77 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1400.04 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 2021.3.15f1 (e8e88683f834)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/Ordenador/Documents/GitHub/minipoly/unity-project/Minipoly/Assets
+Initialize engine version: 2021.3.6f1 (7da38d85baf6)
+[Subsystems] Discovering subsystems at path D:/nueva CARPETA/Unity/2021.3.6f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/nueva CARPETA/Unity/Proyectos/minipoly/unity-project/Minipoly/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: AMD Radeon(TM) Graphics (ID=0x164c)
-    Vendor:   ATI
-    VRAM:     3744 MB
-    Driver:   30.0.13044.0
+    Renderer: Intel(R) UHD Graphics 620 (ID=0x5917)
+    Vendor:   Intel
+    VRAM:     4035 MB
+    Driver:   30.0.101.1994
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56532
+Mono path[0] = 'D:/nueva CARPETA/Unity/2021.3.6f1/Editor/Data/Managed'
+Mono path[1] = 'D:/nueva CARPETA/Unity/2021.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/nueva CARPETA/Unity/2021.3.6f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56732
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.009100 seconds.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 199.56 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.270 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1271ms)
-		BeginReloadAssembly (131ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (0ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (906ms)
-			LoadAssemblies (127ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (225ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (57ms)
-			SetupLoadedEditorAssemblies (523ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (14ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (200ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (233ms)
-				ProcessInitializeOnLoadMethodAttributes (73ms)
-				AfterProcessingInitializeOnLoad (0ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (0ms)
-Platform modules already initialized, skipping
-Registering precompiled user dll's ...
-Registered in 0.008644 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\Ordenador\Documents\GitHub\minipoly\unity-project\Minipoly\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\Ordenador\Documents\GitHub\minipoly\unity-project\Minipoly\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.670 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1671ms)
-		BeginReloadAssembly (168ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (14ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (30ms)
-		EndReloadAssembly (1307ms)
-			LoadAssemblies (119ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (437ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (74ms)
-			SetupLoadedEditorAssemblies (611ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (150ms)
-				ProcessInitializeOnLoadAttributes (402ms)
-				ProcessInitializeOnLoadMethodAttributes (39ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 1.07 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3363 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (113.8 KB). Loaded Objects now: 3820.
-Memory consumption went from 115.7 MB to 115.6 MB.
-Total: 5.306600 ms (FindLiveObjects: 0.569500 ms CreateObjectMapping: 0.212600 ms MarkObjects: 4.230600 ms  DeleteObjects: 0.290800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 25473.451042 seconds.
-  path: Assets/Scenes/HotPotatoe.unity
-  artifactKey: Guid(7d3ed9e03ac1165408154ab0cd18a853) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/HotPotatoe.unity using Guid(7d3ed9e03ac1165408154ab0cd18a853) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6c7862f3e87373531bd3da20934ef8d') in 0.027796 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 122.560339 seconds.
-  path: Assets/Scenes/HideNSeek.unity
-  artifactKey: Guid(f7db84c6857d38a49ab7ff983cd592ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/HideNSeek.unity using Guid(f7db84c6857d38a49ab7ff983cd592ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eef211bc917b47c5b25dc90f61382f6e') in 0.004192 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 29.009335 seconds.
-  path: Assets/Scenes/New Scene.unity
-  artifactKey: Guid(03705a1b71eb82742b05916df63e8b80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/New Scene.unity using Guid(03705a1b71eb82742b05916df63e8b80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78297fe1df59cdf14a0bcd481b68140f') in 0.005250 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 34.939402 seconds.
-  path: Assets/Scenes/Parkour.unity
-  artifactKey: Guid(91090b8984638384184580fa9a3ce7fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Parkour.unity using Guid(91090b8984638384184580fa9a3ce7fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0562c3eb5f135aef32cc16819ac611a') in 0.004136 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 88.349174 seconds.
-  path: Assets/Scenes/WildWest.unity
-  artifactKey: Guid(611e54c65d80ade439506c72656fcea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/WildWest.unity using Guid(611e54c65d80ade439506c72656fcea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fefffb0e8246687229f80c93f9ce761') in 0.002866 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 34.006197 seconds.
-  path: Assets/Scenes/TilePainting.unity
-  artifactKey: Guid(a370703c597ab1e45a6432498c5f7195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/TilePainting.unity using Guid(a370703c597ab1e45a6432498c5f7195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45a13e5955923893f26812e377b74bff') in 0.003112 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 80.932557 seconds.
-  path: Assets/Scenes/FloorIsLava.unity
-  artifactKey: Guid(1e8499f8af95a58459ab7d5c4c523651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/FloorIsLava.unity using Guid(1e8499f8af95a58459ab7d5c4c523651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '738c29f5e6a853f85710c764b07ac956') in 0.011415 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 32.321207 seconds.
-  path: Assets/Scenes/ColorFight.unity
-  artifactKey: Guid(5858fa5812ba9f248ab5fe734bae94d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/ColorFight.unity using Guid(5858fa5812ba9f248ab5fe734bae94d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '925908c998df4eb11d026acf0cf379bb') in 0.004317 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 70.534550 seconds.
-  path: Assets/Scenes/KnockThemOut.unity
-  artifactKey: Guid(2ce560b1f3e16844bb2541eb9ec3b859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/KnockThemOut.unity using Guid(2ce560b1f3e16844bb2541eb9ec3b859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75e11dc39605490d33e9894a843c1a1c') in 0.003386 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 22.518232 seconds.
-  path: Assets/Scenes/TileFall.unity
-  artifactKey: Guid(73895cf2d20c4844cad642f019320500) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/TileFall.unity using Guid(73895cf2d20c4844cad642f019320500) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b1453980c59d5570ecd37462ff19e8a') in 0.003587 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 20.335534 seconds.
-  path: Assets/Scenes/TheKing.unity
-  artifactKey: Guid(5ab59b2a9baaca140aac69ac807f3cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/TheKing.unity using Guid(5ab59b2a9baaca140aac69ac807f3cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0a2094c43a04cfdbba49ae0d7ea717f') in 0.009810 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 44.712168 seconds.
-  path: Assets/Scenes/KingOfTheKill.unity
-  artifactKey: Guid(c210700c92f7d634b8acb448ac2c3ffa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/KingOfTheKill.unity using Guid(c210700c92f7d634b8acb448ac2c3ffa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93c188fb4c94a7b45fac15b60108caad') in 0.011963 seconds 
+Register platform support module: D:/nueva CARPETA/Unity/2021.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.616425 seconds.
