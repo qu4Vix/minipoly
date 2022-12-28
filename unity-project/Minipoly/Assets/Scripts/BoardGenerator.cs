@@ -12,9 +12,7 @@ public class BoardGenerator : MonoBehaviour
         "Hot Potato", "The King", "Wild West",
         "Tile Painting", "Floor is lava", "Color Fight",
         "Knock them Out", "Tile Fall" , "TNT Run"};
-    [SerializeField]
     private string[] selectedMinigames = new string[3 * size];
-    [SerializeField]
     private int[] luckBoxes = new int[size];
 
     // Start is called before the first frame update
@@ -29,6 +27,14 @@ public class BoardGenerator : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void CreateMap()
+    {
+        for (int n = 0; n < map.Length; n++)
+        {
+
+        }
     }
 
     void SelectMap(int _size)
