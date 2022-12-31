@@ -6,13 +6,15 @@ public class BoardGenerator : MonoBehaviour
 {
     public static int size = 4;
 
-    public GameObject[] map = new GameObject[4 * size];
+    public GameObject[] map;
     public GameObject[] minigames = new GameObject[12];
-    private GameObject[] selectedMinigames = new GameObject[12];
-    private int[] luckBoxes = new int[4];
+    private GameObject[] selectedMinigames;
+    private int[] luckBoxes;
     public GameObject luckSquare;
     public GameObject[] cornerBoxes = new GameObject[4];
+    public GameObject boardBase;
     public Vector3[] corners;
+    private Vector3[] constructionDirections = { Vector3.right, Vector3.back, Vector3.left, Vector3.forward };
     
     /* 
         "Hide and Seek", "Parkour", "King of the Kill",
@@ -24,9 +26,10 @@ public class BoardGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        SetLenghts(size, 4);
         SelectLuck(1, size);
-        SelectGames(12);
-        SelectMap(size);
+        SelectGames(size);
+        SelectMap(size, 4);
         CreateMap(size);
     }
 
@@ -36,38 +39,38 @@ public class BoardGenerator : MonoBehaviour
         
     }
 
+    void SetLenghts(int _size, int _luckBoxesNumber)
+    {
+        luckBoxes = new int[_luckBoxesNumber];
+        map = new GameObject[4 * _size];
+        selectedMinigames = new GameObject[(_size - 1) * 4];
+    }
+
     void CreateMap(int _size)
     {
         for (int n = 0; n < 4; n++)
         {
-            Instantiate(cornerBoxes[n], cornerBoxes[n].transform.position * (_size + 1), cornerBoxes[n].transform.rotation);
+            Instantiate(cornerBoxes[n], cornerBoxes[n].transform.position * (_size + 1), cornerBoxes[n].transform.rotation, transform);
         }
-        for (int n = 0; n < _size; n++)
+        for (int i = 0; i < 4; i++)
         {
-            Instantiate(map[n], corners[0] * (_size + 1) + Vector3.right * 4 * (n+1), map[n].transform.rotation);
+            for (int n = _size*i; n < _size*(i + 1); n++)
+            {
+                Instantiate(map[n], corners[i] * (_size + 1) + constructionDirections[i] * 4 * (n + 1 - _size*i), map[n].transform.rotation, transform);
+            }
         }
-        for (int n = _size; n < _size*2; n++)
-        {
-            Instantiate(map[n], corners[1] * (_size + 1) + Vector3.back * 4 * (n - 3), map[n].transform.rotation);
-        }
-        for (int n = _size*2; n < _size*3; n++)
-        {
-            Instantiate(map[n], corners[2] * (_size + 1) + Vector3.left * 4 * (n - 7), map[n].transform.rotation);
-        }
-        for (int n = _size * 3; n < _size * 4; n++)
-        {
-            Instantiate(map[n], corners[3] * (_size + 1) + Vector3.forward * 4 * (n - 11), map[n].transform.rotation);
-        }
+        GameObject board = Instantiate(boardBase, Vector3.zero, boardBase.transform.rotation, transform);
+        board.transform.localScale = new Vector3(0.4f * _size, 1, 0.4f * _size);
     }
 
-    void SelectMap(int _size)
+    void SelectMap(int _size, int _luckBoxesNumber)
     {
         int actualGame = 0;
-        for (int i = 0; i < _size; i++)
+        for (int i = 0; i < _luckBoxesNumber; i++)
         {
             map[luckBoxes[i]] = luckSquare;
         }
-        for (int i = 0; i < _size * _size; i++)
+        for (int i = 0; i < _size * 4; i++)
         {
             if (map[i] != luckSquare)
             {
@@ -92,12 +95,11 @@ public class BoardGenerator : MonoBehaviour
 
         int arrayLength = minigames.Length;
         
-        for (int i = 0; i < _size; i ++)
+        for (int i = 0; i < (_size-1)*4; i ++)
         {
             int minigameIndex = Random.Range(0, arrayLength);
             selectedMinigames[i] = minigames[minigameIndex];
-            print(minigames[minigameIndex]);
-            
+            //print(minigames[minigameIndex]);
         }
     }
 

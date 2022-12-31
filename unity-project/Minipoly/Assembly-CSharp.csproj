@@ -59,6 +59,7 @@
     <Compile Include="Assets\Scripts\BoardGenerator.cs" />
     <Compile Include="Assets\Scripts\Player\MoveCamera.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\DiceController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
