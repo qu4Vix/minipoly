@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5062055005511919376}
   - component: {fileID: 5062055005511919377}
   - component: {fileID: 5062055005511919382}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Glasses
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114,9 +114,10 @@ GameObject:
   - component: {fileID: 5062055005766273424}
   - component: {fileID: 4723535410699793181}
   - component: {fileID: 6815279029113705141}
-  m_Layer: 0
+  - component: {fileID: 3694375721534670368}
+  m_Layer: 7
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -261,18 +262,21 @@ MonoBehaviour:
   <ComponentIndex>k__BackingField: 0
   _networkBehaviours:
   - {fileID: 5062055005766273424}
+  - {fileID: 6815279029113705141}
+  - {fileID: 3694375721534670368}
   <ParentNetworkObject>k__BackingField: {fileID: 0}
   <ChildNetworkObjects>k__BackingField: []
   _isNetworked: 1
   _isGlobal: 0
   _defaultDespawnType: 0
   NetworkObserver: {fileID: 0}
-  <PrefabId>k__BackingField: -1
-  _scenePathHash: 2128593308
+  <PrefabId>k__BackingField: 2
+  _scenePathHash: 234869057
   <SceneId>k__BackingField: 0
   <AssetPathHash>k__BackingField: 7807759643866311769
   _sceneNetworkObjects:
   - {fileID: 4723535410699793181}
+  - {fileID: 0}
 --- !u!114 &6815279029113705141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,9 +289,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2836e36774ca1c4bbbee976e17b649c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 255
+  _componentIndexCache: 1
   _addedNetworkObject: {fileID: 4723535410699793181}
-  _networkObjectCache: {fileID: 0}
+  _networkObjectCache: {fileID: 4723535410699793181}
   _synchronizeParent: 0
   _packing:
     Position: 1
@@ -315,6 +319,29 @@ MonoBehaviour:
     X: 0
     Y: 0
     Z: 0
+--- !u!114 &3694375721534670368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5062055005766273434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f523de532607694ba86e5a07bbb5e82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _componentIndexCache: 2
+  _addedNetworkObject: {fileID: 4723535410699793181}
+  _networkObjectCache: {fileID: 4723535410699793181}
+  body: {fileID: 5062055005766273434}
+  endColor: {r: 1, g: 0, b: 0, a: 0}
+  playerCamera: {fileID: 0}
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 128
+  maxDistance: 2
+  HideManager: {fileID: 3387073171067811730, guid: cc94d48682c465b40b4193b378b3058e, type: 3}
 --- !u!1 &5062055005837939708
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,7 +351,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5062055005837939711}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Orientation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -356,7 +383,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5062055006605196755}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
